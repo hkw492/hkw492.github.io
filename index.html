@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemanth Kumar | Game Developer</title>
+    <title>Hemanth Kumar | Gameplay Programmer</title>
     <style>
         :root {
             --bg-color: #121212;
             --card-bg: #1e1e1e;
-            --accent: #007bff; /* Unreal Engine Blue-ish tone */
+            --accent: #007bff; /* Unreal Blue */
             --text-main: #e0e0e0;
             --text-muted: #a0a0a0;
             --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,7 +35,7 @@
         /* Hero Section */
         .hero { padding: 80px 0; text-align: left; }
         .hero h2 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; color: #fff; }
-        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 600px; margin-bottom: 30px; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin-bottom: 30px; }
         .btn {
             display: inline-block;
             background-color: var(--accent);
@@ -56,6 +56,8 @@
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; }
         .skill-card { background: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center; }
         .skill-card h4 { color: var(--accent); margin-bottom: 10px; }
+        .skill-card ul { list-style: none; padding: 0; }
+        .skill-card li { margin-bottom: 5px; color: var(--text-muted); }
 
         /* Projects */
         .project-card { 
@@ -68,6 +70,7 @@
         .project-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 15px; }
         .project-title { font-size: 1.8rem; color: #fff; }
         .project-tech { color: var(--accent); font-family: monospace; }
+        .project-role { display: block; margin-bottom: 15px; font-style: italic; color: var(--text-muted); }
         .project-details ul { list-style-position: inside; color: var(--text-muted); margin-top: 15px; }
         .project-details li { margin-bottom: 8px; }
 
@@ -77,15 +80,17 @@
         .edu-degree { color: var(--text-muted); }
         .edu-date { color: var(--accent); font-size: 0.9rem; }
 
-        /* Footer */
+        /* Contact & Footer */
+        .contact-info { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+        .contact-item { display: flex; align-items: center; color: var(--text-muted); }
         footer { padding: 40px 0; text-align: center; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #333; }
-        .social-links a { color: var(--text-main); margin: 0 10px; text-decoration: none; }
 
         @media (max-width: 768px) {
             .hero h2 { font-size: 2rem; }
             header { flex-direction: column; gap: 20px; }
             nav { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
             nav a { margin: 0; }
+            .project-header { flex-direction: column; gap: 10px; }
         }
     </style>
 </head>
@@ -102,53 +107,86 @@
             </nav>
         </header>
 
-        <section class="hero">
-            <h2>Game Programmer specializing in <br><span style="color: var(--accent);">Unreal Engine 5</span></h2>
+        <section class="hero" id="about">
+            <h2>Gameplay Programmer <br><span style="color: var(--accent);">Unreal Engine 5 & C++</span></h2>
             <p>
-                Experienced in architecting modular gameplay systems, 3D Math, and physics-based interactions. 
-                Currently building high-fidelity puzzle mechanics.
+                Specializing in 3D Math and architecting modular systems. 
+                Dedicated to writing clean, scalable code and seeking a challenging role to hone technical skills 
+                and add value to organizational goals.
             </p>
-            <a href="#projects" class="btn">View My Work</a>
+            <a href="#projects" class="btn">View Projects</a>
         </section>
 
         <section id="skills">
-            <h3 class="section-title">Technical Competencies</h3>
+            <h3 class="section-title">Technical Skills</h3>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h4>Languages</h4>
-                    <p>C++, C#, Blueprints</p>
+                    <ul>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Unreal Blueprints</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
                     <h4>Engines</h4>
-                    <p>Unreal Engine 5, Unity 6 (URP/HDRP)</p>
+                    <ul>
+                        <li>Unreal Engine 5</li>
+                        <li>Unity 6</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
-                    <h4>Core</h4>
-                    <p>3D Math, Gameplay Programming, Physics</p>
+                    <h4>Area of Interest</h4>
+                    <ul>
+                        <li>3D Math</li>
+                        <li>Gameplay Programming</li>
+                        <li>Physics Implementation</li>
+                        <li>AI Behaviour</li>
+                        <li>Performance Optimization</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
                     <h4>Tools</h4>
-                    <p>Git, Visual Studio, Maya (Basics)</p>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>Git</li>
+                        <li>Autodesk Maya (Basics)</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <h3 class="section-title">Featured Projects</h3>
+            <h3 class="section-title">Projects</h3>
             
             <div class="project-card">
                 <div class="project-header">
                     <h3 class="project-title">Ember: The Near Nowhere</h3>
                     <span class="project-tech">UE5 | Blueprints</span>
                 </div>
+                <span class="project-role">Role: Gameplay Programmer</span>
                 <p style="color: #fff; margin-bottom: 15px;">
-                    A puzzle-mechanic environment focused on object manipulation and synthesis.
+                    Objective: To uncover the forgotten history of the Village by reconstructing physical objects and unlocking dormant memories.
                 </p>
                 <div class="project-details">
                     <ul>
-                        [span_0](start_span)<li><strong>Interaction System:</strong> Architected a modular system allowing players to query and manipulate environmental objects with precise collision detection[span_0](end_span).</li>
-                        [span_1](start_span)<li><strong>Crafting Logic:</strong> Developed component-based validation for ingredient combinations, spawning complex objects upon synthesis[span_1](end_span).</li>
-                        [span_2](start_span)<li><strong>Inventory Management:</strong> Implemented runtime state management for assets, ensuring seamless transitions between "raw" and "crafted" states[span_2](end_span).</li>
+                        <li><strong>Interaction System:</strong> Architected a modular interaction system using Blueprints, enabling the player to query and manipulate environmental objects (drawers, pickups) with precise collision detection.</li>
+                        <li><strong>Crafting Logic:</strong> Developed a component-based crafting mechanic that validates ingredient combinations and spawns complex "whole" objects upon successful synthesis.</li>
+                        <li><strong>Inventory Management:</strong> Implemented a runtime inventory system to manage state changes for collected assets, ensuring seamless transitions between "raw" and "crafted" item states.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">C++ Gameplay Mechanics Prototype</h3>
+                    <span class="project-tech">C++ | UE5</span>
+                </div>
+                <span class="project-role">Role: Programmer</span>
+                <div class="project-details">
+                    <ul>
+                        <li><strong>Character Logic:</strong> Implemented a custom C++ Character class with exposed <code>UPROPERTY</code> and <code>UFUNCTION</code> macros, allowing designers to tweak movement speed and health values directly in Blueprints.</li>
+                        <li><strong>Damage System:</strong> Wrote a modular C++ damage interface to handle health reduction across different actor types (Players, Enemies, Destructible Objects).</li>
                     </ul>
                 </div>
             </div>
@@ -158,34 +196,38 @@
             <h3 class="section-title">Education</h3>
             
             <div class="edu-item">
-                <div class="edu-school">ICAT Design And Media College, Chennai</div>
+                <div class="edu-school">ICAT College of Design & Media, Chennai</div>
                 <div class="edu-degree">Master of Science: Game Technology</div>
                 <div class="edu-date">Expected 03/2026</div>
             </div>
 
             <div class="edu-item">
                 <div class="edu-school">IIFA Lancaster Degree College, Bengaluru</div>
-                <div class="edu-degree">Bachelor of Science: Game Design And Development</div>
-                [span_3](start_span)<div class="edu-date">Graduated with Distinction (8.4 CGPA)[span_3](end_span)</div>
+                <div class="edu-degree">Bachelor of Science: Game Design and Development</div>
+                <div class="edu-date">08/2023 | 8.4 CGPA</div>
             </div>
         </section>
 
         <section id="contact">
-            <h3 class="section-title">Get In Touch</h3>
+            <h3 class="section-title">Contact</h3>
             <p style="margin-bottom: 20px; color: var(--text-muted);">
-                Currently open to opportunities in Gameplay Programming.
+                Open to opportunities in Hosur, Bengaluru, or Remote.
             </p>
-            <div class="social-links">
-                <a href="mailto:hemanthkumar492@icloud.com">hemanthkumar492@icloud.com</a>
-                <span>|</span>
-                <a href="https://www.linkedin.com/in/hemanthkumar492" target="_blank">LinkedIn</a>
-                <span>|</span>
-                <a href="https://hkw492.github.io" target="_blank">hkw492.github.io</a>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong>&nbsp;<a href="mailto:hemanthkumar492@icloud.com" style="color: var(--accent); text-decoration: none;">hemanthkumar492@icloud.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>&nbsp;<span>8072644359</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Location:</strong>&nbsp;<span>Hosur</span>
+                </div>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 Hemanth Kumar. Built for Game Dev.</p>
+            <p>&copy; 2026 Hemanth Kumar.</p>
         </footer>
     </div>
 
