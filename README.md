@@ -1,7 +1,7 @@
 # Hemanth Kumar R — Game Developer Portfolio
 
 > Personal portfolio website for **Hemanth Kumar R**, Gameplay Programmer specialising in Unreal Engine 5.  
-> Built to showcase projects, technical skills, and internship readiness.
+> Built to showcase projects, technical skills, and full-time job readiness.
 
 🌐 **Live Site:** [hkw492.github.io](https://hkw492.github.io)  
 🎮 **Featured Project:** [Ember – The Near Nowhere](https://youtu.be/izdAp6__aU0)
@@ -117,28 +117,19 @@ Before deploying, update the following in `portfolio.html`:
 
 ---
 
-## Features
+## Project Features & Pipeline
 
-- **Custom cursor** — gold dot with lagging ring follow effect
-- **Particle system** — floating gold and blue soul particles in the hero
-- **Screenshot gallery** — 6-image grid with click-to-expand lightbox
-- **YouTube embed** — gameplay video directly in the page
-- **Scroll reveal animations** — sections animate in as you scroll
-- **Playtesting case study** — 6 real UX issues documented from a live public showcase with proposed engineering fixes
-- **Internship roadmap** — 6-month plan showing next projects and milestones
-- **Fully responsive** — works on mobile, tablet, and desktop
-- **Zero dependencies** — single HTML file + images, deploys anywhere
+- **Active Production Tracker** — Outlining development milestones for *Pizza Mayhem*, moving from structural Blueprint prototypes to low-level Unreal C++ systems.
+- **Cross-Engine Versatility** — A structured roadmap detailing a dedicated switch to Unity (C#) for rapid mechanics-prototyping and decoupled puzzle architecture.
+- **Live Playtesting Case Study** — Documentation of 6 distinct critical UX flaws captured during the live public mall showcase of *Ember*, complete with production-ready engineering solutions.
 
 ---
 
 ## Skills Showcased
 
-```
-Primary     Unreal Engine 5.6 · Blueprints · Level Sequencer · UMG · Lumen
-Secondary   Unity · C# · Rapid Prototyping
-Tools       Git · itch.io · Visual Studio · Autodesk Maya (basics)
-Process     Live Playtesting · GDD Reading · Cross-discipline Collaboration
-```
+Primary Engine     Unreal Engine 5 (C++ / Blueprints) · Chaos Physics · Level Sequencer · UMG
+Secondary Engine   Unity (C#) · Modular Mechanics Prototyping · State Systems
+Tools & Process    Git Version Control · Live Playtesting · Cross-Discipline Collaboration · Visual Studio
 
 ---
 
@@ -149,10 +140,10 @@ Gameplay Programmer — Unreal Engine 5
 📧 hemanthkumar492@icloud.com  
 🎮 [Gameplay Video — Ember: The Near Nowhere](https://youtu.be/izdAp6__aU0)
 
-*Open to internship opportunities in game development.*
+*Open to full-time job opportunities in game development.*
 
 ---
 
 <p align="center">
-  Built with intention · Designed for Unreal Engine internship applications · © 2025 Hemanth Kumar R
+  Built with intention · Designed for Unreal Engine game developer applications · © 2025 Hemanth Kumar R
 </p>
